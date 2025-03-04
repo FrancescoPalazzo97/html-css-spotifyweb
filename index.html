@@ -13,9 +13,9 @@
 <body>
     <main class="d-flex">
         <!-- LEFT SIDE -->
-        <div class="left-side">
-            <div id="sidebar">
-                <ul class="txt-white">
+        <div id="left-side">
+            <div id="sidebar" class="d-flex d-column j-between">
+                <ul class="txt-white d-flex wrap">
                     <!-- LOGO -->
                     <li class="logo">
                         <img src="./img/logo.svg" alt="Logo Spotify" class="w100">
@@ -90,8 +90,31 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="user"></li>
+                    <!-- USER -->
                 </ul>
+                <div id="user">
+                    <div class="col-full my-5">
+                        <a href="#">
+                            <div class="col-10 mr-5">
+                                <img src="./img/download.svg" alt="" class="w100 v-align-middle">
+                            </div>
+                            <div class="col-90">
+                                <span>Installa app</span>
+                            </div>
+                        </a>
+                    </div>
+                    <hr>
+                    <div class="col-full d-flex align-items-center my-5">
+                        <a href="#">
+                            <div class="col-20 mr-5">
+                                <i class="fa-solid fa-circle-user"></i>
+                            </div>
+                            <div class="col-80">
+                                <span>Francesco Palazzo</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="right-side">
