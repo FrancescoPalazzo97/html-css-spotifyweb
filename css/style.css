@@ -23,12 +23,20 @@ ul {
     vertical-align: middle;
 }
 
+.pl-3 {
+    padding-left: 3px;
+}
+
 .mr-5 {
     margin-right: 5px;
 }
 
 .my-5 {
     margin: 5px 0;
+}
+
+.mx-auto {
+    margin: 0 auto;
 }
 
 /* TXT */
@@ -89,6 +97,11 @@ ul {
     justify-content: space-between;
 }
 
+.j-end {
+    justify-content: flex-end;
+    align-items: str;
+}
+
 .wrap {
     flex-wrap: wrap;
 }
@@ -101,6 +114,26 @@ ul {
     align-self: flex-end;
 }
 
+/* BUTTON */
+
+.btn-style {
+    padding: 10px 20px;
+}
+
+.btn-white {
+    color: white;
+    text-decoration: none;
+    border: 3px solid white;
+    border-radius: 30px;
+    filter: brightness(70%);
+    transition: 0.5s;
+}
+
+.btn-white:hover {
+    filter: none;
+    padding: 15px 25px;
+}
+
 /* MAIN */
 
 /* LEFT SIDE */
@@ -110,13 +143,25 @@ ul {
     height: calc(100vh - 100px);
     background-color: #000000;
     padding: 15px;
-
 }
+
+#left-side-mobile {
+    width: calc(230px / 4);
+    height: calc(100vh - 100px);
+    background-color: #000000;
+    padding: 15px;
+    display: none;
+}
+
 /* SIDEBAR */
 
-/* #sidebar {
-    width: 80%;
-} */
+#sidebar {
+    height: 100%;
+}
+
+#sidebar-mobile {
+    height: 100%;
+}
 
 #sidebar>ul>li {
     padding: 15px 0;
@@ -194,6 +239,34 @@ ul {
     font-size: 30px;
 }
 
+.user-icon {
+    background-color: #bbbbbb;
+    border-radius: 50%;
+}
+
+/* MOBILE 576PX */
+
+#sidebar-mobile a {
+    color: white;
+    text-decoration: none;
+    filter: brightness(70%);
+    transition: 0.5s;
+}
+
+#sidebar-mobile a:hover {
+    filter: none;
+}
+
+#section-mobile>* {
+    margin-bottom: 15px;
+}
+
+#user-mobile>* {
+    margin-top: 15px;
+}
+
+
+
 /* RIGHT SIDE */
 
 /* HEADER */
@@ -201,12 +274,16 @@ ul {
 header {
     height: 100px;
     width: calc(100vw - 230px);
-    background-color: blue;
+    background-color: #080b12;
+}
+
+.upgrade-section {
+    margin: 20px;
 }
 
 /* CONTENT */
 
-.content {
+#content {
     height: calc(100vh - 200px);
     width: calc(100vw - 230px);
     background-color: brown;
@@ -217,4 +294,17 @@ header {
 footer {
     height: 100px;
     background-color: blueviolet;
+}
+
+/* MEDIA QUERY */
+
+@media screen and (max-width: 576px) {
+    
+    #left-side {
+        display: none;
+    }
+
+    #left-side-mobile {
+        display: block;
+    }
 }
