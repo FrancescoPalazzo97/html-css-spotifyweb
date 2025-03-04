@@ -92,10 +92,12 @@ ul {
     align-items: center;
     color: white;
     text-decoration: none;
+    filter: brightness(70%);
+    transition: 0.5s;
 }
 
 #menu-sections a:hover {
-    color: #ccc;
+    filter: none;
 }
 
 #home,
@@ -106,7 +108,33 @@ ul {
 
 /* PLAYLIST */
 
+#playlist h2 {
+    text-transform: uppercase;
+}
 
+#playlist ul li {
+    margin: 10px 0;
+}
+
+#playlist ul li a{
+    vertical-align: middle;
+    font-size: 18px;
+    margin: 10px 0;
+    color: white;
+    text-decoration: none;
+    filter: brightness(70%);
+    transition: 0.5s;
+}
+
+#playlist ul li a:hover {
+    filter: none;
+}
+
+#playlist ul li a i {
+    font-size: 60px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
 
 /* RIGHT SIDE */
 
