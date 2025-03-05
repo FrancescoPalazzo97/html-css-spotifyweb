@@ -626,6 +626,12 @@ footer {
         row-gap: 15px;
         column-gap: 30px;
     }
+
+    /* FOOTER */
+
+    #play-action .progress-bar-section span {
+        padding: 0;
+    }
 }
 
 /* s */
@@ -650,6 +656,16 @@ footer {
 
     #action-bar #song-preview .btn ul {
         flex-direction: column;
+    }
+
+    /* FOOTER */
+
+    #play-action .progress-bar-section span {
+        width: 15%;
+    }
+
+    #play-action .progress-bar-section .progress-bar {
+        width: 70%;
     }
 
 }
@@ -681,9 +697,12 @@ footer {
         /* FOOTER */
 
     #song-preview,
-    #play-action,
     #volume-section {
         width: 30%;
+    }
+
+    #play-action {
+        width: 35%;
     }
 
     #song-preview .img-song-preview, 
