@@ -427,10 +427,17 @@ header {
 footer {
     height: 100px;
     background-color: #282828;
+    color: white;
 }
 
 #song-preview, .volume-section {
     max-width: 230px;
+}
+
+#action-bar {
+    height: 100%;
+    margin: 0 0 0 15px;
+    padding: 0 15px 0 0;
 }
 
 /* SONG PREVIEW */
