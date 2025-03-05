@@ -434,8 +434,8 @@ footer {
     color: white;
 }
 
-#song-preview, .volume-section {
-    max-width: 230px;
+#song-preview, #volume-section {
+    width: 230px;
     padding: 0 0 0 8px;
 }
 
@@ -474,9 +474,79 @@ footer {
     text-decoration: underline;
 }
 
-.btn ul {
+#song-preview .btn ul {
     column-gap: 8px;
 }
+
+/* PLAY ACTION */
+
+#play-action {
+    width: calc(35%);
+}
+
+#play-action>.btn {
+    max-width: 100%;
+}
+
+#play-action>.btn>ul>li {
+    font-size: 22px;
+    margin: 0 25px 0 0;
+}
+
+#play-action>.btn>ul>li:nth-child(3) {
+    font-size: 38px;
+}
+
+#play-action .progress-bar-section {
+    width: 100%;
+}
+
+#play-action .progress-bar-section span {
+    width: 10%;
+    padding: 0 15px;
+    font-size: 12px;
+}
+
+#play-action .progress-bar-section .progress-bar {
+    width: 80%;
+    height: 4px;
+    background-color: gray;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#play-action .progress-bar-section .active-bar {
+    width: 25%;
+    height: 4px;
+    background-color: rgb(221, 221, 221);
+    border-radius: 15px;
+    transition: 0.2s;
+}
+
+#play-action .progress-bar-section .active-bar:hover {
+    background-color: limegreen;
+}
+
+#play-action .progress-bar-section .white-dot {
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 50%;
+    right: -8px;
+    top: -8px;
+    display: none;
+}
+
+#play-action .progress-bar-section .active-bar:hover .white-dot {
+    display: block;
+}
+
+/* VOLUME SECTION */
+
+
+
+/* BTN */
 
 .btn ul li {
     filter: brightness(60%);
