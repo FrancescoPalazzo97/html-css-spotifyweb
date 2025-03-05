@@ -645,8 +645,11 @@ footer {
     }
 
     .cover {
-        /* justify-content: flex-start; */
         row-gap: 20px;
+    }
+
+    #action-bar #song-preview .btn ul {
+        flex-direction: column;
     }
 
 }
