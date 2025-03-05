@@ -123,6 +123,14 @@ ul {
     justify-content: center;
 }
 
+.j-around {
+    justify-content: space-around;
+}
+
+.j-evenly {
+    justify-content: space-evenly;
+}
+
 .j-end {
     justify-content: flex-end;
     align-items: str;
@@ -527,7 +535,13 @@ footer {
     background-color: limegreen;
 }
 
-#play-action .progress-bar-section .white-dot {
+#play-action .progress-bar-section .active-bar:hover .white-dot {
+    display: block;
+}
+
+/* WHITE DOT */
+
+.white-dot {
     height: 20px;
     width: 20px;
     background-color: white;
@@ -538,13 +552,39 @@ footer {
     display: none;
 }
 
-#play-action .progress-bar-section .active-bar:hover .white-dot {
-    display: block;
-}
-
 /* VOLUME SECTION */
 
+#volume-section {
+    padding-right: 8px;
+}
 
+#volume-section .btn {
+    width: 38%;
+}
+
+#volume-section .volume-bar {
+    width: 58%;
+    height: 4px;
+    background-color: gray;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#volume-section .active-bar {
+    width: 30%;
+    height: 4px;
+    background-color: rgb(221, 221, 221);
+    border-radius: 15px;
+    transition: 0.2s;
+}
+
+#volume-section .active-bar:hover {
+    background-color: limegreen;
+}
+
+#volume-section .active-bar:hover .white-dot {
+    display: block;
+}
 
 /* BTN */
 
