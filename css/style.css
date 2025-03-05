@@ -41,8 +41,22 @@ ul {
 
 /* TXT */
 
+.txt-center {
+    text-align: center;
+}
+
 .txt-white {
     color: white;
+}
+
+/* POSITION */
+
+.p-relative {
+    position: relative;
+}
+
+.p-absolute {
+    position: absolute;
 }
 
 /* LAYOUT */
@@ -71,6 +85,10 @@ ul {
     width: 30%;
 }
 
+.col-60 {
+    width: 60%;
+}
+
 .col-70 {
     width: 70%;
 }
@@ -95,6 +113,10 @@ ul {
 
 .j-between {
     justify-content: space-between;
+}
+
+.j-center {
+    justify-content: center;
 }
 
 .j-end {
@@ -142,7 +164,7 @@ ul {
     width: 230px;
     height: calc(100vh - 100px);
     background-color: #000000;
-    padding: 15px;
+    padding: 15px 0;
 }
 
 #left-side-mobile {
@@ -164,7 +186,7 @@ ul {
 }
 
 #sidebar>ul>li {
-    padding: 15px 0;
+    padding: 15px;
 }
 
 /* MENÙ DELLE SEZIONI */
@@ -181,6 +203,7 @@ ul {
 
 #menu-sections a:hover {
     filter: none;
+    /* border-left: 3px solid green; */
 }
 
 #home,
@@ -220,6 +243,10 @@ ul {
 }
 
 /* USER SECTION */
+
+#user {
+    padding: 0 15px;
+}
 
 #user a {
     display: flex;
@@ -286,7 +313,87 @@ header {
 #content {
     height: calc(100vh - 200px);
     width: calc(100vw - 230px);
-    background-color: brown;
+    background-color: #141922;
+}
+
+/* MUSIC SECTIONS */
+
+#music-sections>ul>li {
+    margin: 15px 30px;
+}
+
+#music-sections>ul>li>a {
+    color: white;
+    text-decoration: none;
+    filter: brightness(70%);
+    transition: 0.5s;
+}
+
+#music-sections>ul>li>a:hover {
+    filter: none;
+}
+
+/* RECENTLY PLAYED */
+
+#recently-played {
+    padding: 15px;
+    color: white;
+}
+
+/* COVER */
+
+
+
+#recently-played>.cover{
+    padding: 15px 0;
+}
+
+/* SONG */
+
+#recently-played>.cover>.song {
+    width: 15%;
+}
+
+.song:hover .hover-effect-cover {
+    display: flex;
+}
+
+.song:hover h3 {
+    filter: none;
+}
+
+.song:hover span {
+    filter: brightness(80%);
+}
+
+/* IMG SONG */
+
+.hover-effect-cover {
+    background-color: rgba(128, 128, 128, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 5px;
+    right: 0;
+    display: none;
+}
+
+.hover-effect-cover>i {
+    font-size: 70px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* TITLE SONG */
+
+.title-song h3 {
+    margin-top: 10px;
+    filter: brightness(80%);
+    transition: 0.5s;
+}
+
+.title-song span {
+    filter: brightness(50%);
+    transition: 0.5s;
 }
 
 /* FOOTER */
